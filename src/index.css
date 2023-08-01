@@ -1,0 +1,112 @@
+@tailwind base;
+
+* {
+  margin: 0;
+}
+
+h3 {
+  @apply text-blackTitle font-displayFont text-[30px] font-bold tracking-[1.5px]
+}
+
+h4 {
+  @apply font-displayFont text-[24px] text-blackTitle font-bold
+}
+
+
+@tailwind components;
+
+.wrapper {
+  @apply max-w-[1690px] mx-auto
+}
+
+.container {
+  @apply max-w-[1440px] mx-auto
+}
+
+.title {
+  @apply text-blackTitle font-displayFont font-black leading-[58px] tracking-[0.88px]
+}
+
+.active {
+  @apply border-b-orangeBtn border-b-[4px]
+}
+
+.nav-item {
+  @apply cursor-pointer font-displayFont text-[18px] font-bold text-blackTitle tracking-[0.9px]
+}
+
+.shadowBtn {
+  box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35);
+
+}
+
+.filter {
+  box-shadow: 8px 9px 19px rgba(0, 0, 0, 0.20);
+
+}
+
+.backgroundImg {
+  background: url("../images/imagefull.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+}
+.backgroundMap{
+  background: url("../public/map.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+}
+
+.subtitle {
+  @apply text-blackTitle font-displayFont text-[44px] font-black leading-[58px] tracking-[0.88px] capitalize
+}
+
+.line {
+  @apply relative after:absolute after:content-[''] after:w-[100%] after:bg-orangeBtn after:h-2 after:bottom-[10px] after:left-0 after:-z-[1]
+}
+
+.logo-box {
+  @apply flex items-center justify-center rounded-[20px] bg-[#F6F6F6] bg-opacity-50 h-[120px] min-w-[240px] cursor-pointer
+}
+
+.hover-box {
+  @apply bg-[#FBFBFB] shadow-[0px_10px_20px_0px_rgba(5,5,5,0.08)]
+}
+
+.textType {
+  @apply text-blackTitle font-textFont font-normal leading-8 tracking-[0.36px] text-[18px]
+}
+
+.card {
+  @apply w-[287px] h-[352px] rounded-[30px] bg-white border border-[#FACA10] px-[27px] flex flex-col justify-center place-items-center
+}
+
+.card-title {
+  @apply text-blackTitle font-displayFont text-[30px] font-bold tracking-[1.5px] text-center whitespace-nowrap pt-[30px] pb-[12px]
+}
+.textType1{
+  @apply text-blackTitle font-textFont text-[17px] font-normal leading-[30px] tracking-[0.34px]
+}
+.textType2{
+  @apply text-blackTitle font-textFont text-[18px] font-normal leading-[31px] tracking-[0.36px] 
+}
+
+.dot{
+  @apply w-[18px] h-[18px] rounded-full bg-[#FACA10] cursor-pointer 
+}
+.group{
+  @apply flex flex-col 
+}
+
+.label{
+@apply text-[#A5A5A5] text-[14px] font-displayFont font-normal leading-[18px] tracking-[0.28px] pb-[4px]
+}
+input{
+@apply border-b-[#A5A5A5] border-b-[1px] pb-[12px] outline-none font-displayFont text-[18px] font-bold leading-6
+}
+
+
+@tailwind utilities;
